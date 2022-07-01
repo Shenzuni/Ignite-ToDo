@@ -15,16 +15,16 @@ export interface Task {
 function App() {
   const [tasks, setTasks] = useState<Task[] | []>([
     {
-      id: 1,
+      id: 0,
       content: "Assistir aulas da nova trilha de React do Ignite Lab",
       done: true,
     },
     {
-      id: 2,
+      id: 1,
       content: "Assistir aulas da trilha de Node do Ignite Lab",
       done: false,
     },
-    { id: 3, content: "Comprar filtro de café ☕", done: false },
+    { id: 2, content: "Comprar filtro de café ☕", done: false },
   ])
 
   const onToggleDone = (id: number) => {
